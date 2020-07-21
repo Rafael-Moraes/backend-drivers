@@ -10,6 +10,7 @@ const listController = new ListController();
 routes.post('/drivers', driversController.create);
 
 routes.get('/drivers', listController.index);
+routes.get('/drivers/:id', listController.show);
 
 export default routes;
 
